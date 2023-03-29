@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6ED041D0-BEF2-4AB5-8F91-CF5417872BEC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TKS_Thuc_Tap_Web</RootNamespace>
+    <AssemblyName>TKS_Thuc_Tap_Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.Web, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2.Web, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Danh_Muc\Drill_Down.aspx" />
+    <Content Include="Danh_Muc\Mau_Column.aspx" />
+    <Content Include="Danh_Muc\UserControl\uc2002_Drill_Down.ascx" />
+    <Content Include="Danh_Muc\UserControl\uc2003_Mau_Column.ascx" />
+    <Content Include="Dashboard\Dashboard.aspx" />
+    <Content Include="Dashboard\UserControl\uc8000_Dashboard.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <Content Include="Sample_Page\Bao_Cao.aspx" />
+    <Content Include="Sample_Page\Blank_Page.aspx" />
+    <Content Include="Sample_Page\Danh_Muc.aspx" />
+    <Content Include="Sample_Page\Edit_Form.aspx" />
+    <Content Include="Sample_Page\Tim_Kiem.aspx" />
+    <Content Include="Sample_Page\UserControl\uc1312_Danh_Muc.ascx" />
+    <Content Include="Sample_Page\UserControl\uc1313_Edit_Form.ascx" />
+    <Content Include="Sample_Page\UserControl\uc1315_Tim_Kiem.ascx" />
+    <Content Include="Sample_Page\UserControl\uc1316_Bao_Cao.ascx" />
+    <Content Include="WebAdmin\Admin\Danh_Muc_Chuc_Nang.aspx" />
+    <Content Include="WebAdmin\Admin\Danh_Sach_Nhom_Quyen.aspx" />
+    <Content Include="WebAdmin\Admin\Danh_Sach_Thanh_Vien.aspx" />
+    <Content Include="WebAdmin\Admin\Doi_Mat_Khau.aspx" />
+    <Content Include="WebAdmin\Admin\Phan_Quyen_Chuc_Nang.aspx" />
+    <Content Include="WebAdmin\Admin\Quan_Ly_Thanh_Vien_Thuoc_Nhom.aspx" />
+    <Content Include="WebAdmin\Admin\SignIn.aspx" />
+    <Content Include="WebAdmin\Admin\SignOut.aspx" />
+    <Content Include="WebAdmin\Admin\Thong_Tin_Account.aspx" />
+    <Content Include="WebAdmin\Admin\UserControl\uc1001_DM_Chuc_Nang.ascx" />
+    <Content Include="WebAdmin\Admin\UserControl\uc1002_DM_Thanh_Vien.ascx" />
+    <Content Include="WebAdmin\Admin\UserControl\uc1003_DM_Nhom_Quyen.ascx" />
+    <Content Include="WebAdmin\Admin\UserControl\uc1004_Phan_Quyen_Chuc_Nang.ascx" />
+    <Content Include="WebAdmin\Admin\UserControl\uc1005_Phan_Nhom_Thanh_Vien.ascx" />
+    <Content Include="WebAdmin\Admin\UserControl\uc1008_Doi_Mat_Khau.ascx" />
+    <Content Include="WebAdmin\Admin\UserControl\uc1009_Thong_Tin_Account.ascx" />
+    <Content Include="WebAdmin\Admin\UserControl\ucContent_Sample.ascx" />
+    <Content Include="WebAdmin\Admin\UserControl\ucFooter.ascx" />
+    <Content Include="WebAdmin\Admin\UserControl\ucHeader.ascx" />
+    <Content Include="WebAdmin\Admin\UserControl\ucLeftMenuBar.ascx" />
+    <Content Include="WebAdmin\media\css\bootstrap.css" />
+    <Content Include="WebAdmin\media\css\font-awesome.css" />
+    <Content Include="WebAdmin\media\css\login.css" />
+    <Content Include="WebAdmin\media\css\responsive.css" />
+    <Content Include="WebAdmin\media\css\style.css" />
+    <Content Include="WebAdmin\media\fonts\fontawesome-webfont.svg" />
+    <Content Include="WebAdmin\media\img\01.png" />
+    <Content Include="WebAdmin\media\img\02.png" />
+    <Content Include="WebAdmin\media\img\03.png" />
+    <Content Include="WebAdmin\media\img\04.png" />
+    <Content Include="WebAdmin\media\img\backg_Cotyl.jpg" />
+    <Content Include="WebAdmin\media\img\backg_full.jpg" />
+    <Content Include="WebAdmin\media\img\bgLeftTitle.jpg" />
+    <Content Include="WebAdmin\media\img\book.png" />
+    <Content Include="WebAdmin\media\img\folder.png" />
+    <Content Include="WebAdmin\media\img\icon.png" />
+    <Content Include="WebAdmin\media\img\iconLeftTitleSub.jpg" />
+    <Content Include="WebAdmin\media\img\icon_favorits.png" />
+    <Content Include="WebAdmin\media\img\icon_finder.png" />
+    <Content Include="WebAdmin\media\img\icon_qlttdn.jpg" />
+    <Content Include="WebAdmin\media\img\icon_search.png" />
+    <Content Include="WebAdmin\media\img\logo.png" />
+    <Content Include="WebAdmin\media\img\logo_TKS.png" />
+    <Content Include="WebAdmin\media\img\logo_TKSx40px.png" />
+    <Content Include="WebAdmin\media\img\PageBorders\bottom-left-corner.gif" />
+    <Content Include="WebAdmin\media\img\PageBorders\bottom-left-corner.png" />
+    <Content Include="WebAdmin\media\img\PageBorders\bottom-right-corner.gif" />
+    <Content Include="WebAdmin\media\img\PageBorders\bottom-right-corner.png" />
+    <Content Include="WebAdmin\media\img\PageBorders\bottom.gif" />
+    <Content Include="WebAdmin\media\img\PageBorders\bottom.png" />
+    <Content Include="WebAdmin\media\img\PageBorders\left.gif" />
+    <Content Include="WebAdmin\media\img\PageBorders\left.png" />
+    <Content Include="WebAdmin\media\img\PageBorders\right.gif" />
+    <Content Include="WebAdmin\media\img\PageBorders\right.png" />
+    <Content Include="WebAdmin\media\img\PageBorders\top-left-corner.gif" />
+    <Content Include="WebAdmin\media\img\PageBorders\top-left-corner.png" />
+    <Content Include="WebAdmin\media\img\PageBorders\top-right-corner.gif" />
+    <Content Include="WebAdmin\media\img\PageBorders\top-right-corner.png" />
+    <Content Include="WebAdmin\media\img\PageBorders\top.gif" />
+    <Content Include="WebAdmin\media\img\PageBorders\top.png" />
+    <Content Include="WebAdmin\media\img\tabsLeft.jpg" />
+    <Content Include="WebAdmin\media\img\tabsRight.jpg" />
+    <Content Include="WebAdmin\media\js\bootstrap.min.js" />
+    <Content Include="WebAdmin\media\js\jquery.min.js" />
+    <Content Include="WebAdmin\media\js\modernizr.custom.js" />
+    <Content Include="WebAdmin\media\js\scripts.js" />
+    <Content Include="WebAdmin\media\js\twitter-bootstrap-hover-dropdown.min.js" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WebAdmin\media\fonts\fontawesome-webfont.eot" />
+    <Content Include="WebAdmin\media\fonts\fontawesome-webfont.ttf" />
+    <Content Include="WebAdmin\media\fonts\fontawesome-webfont.woff" />
+    <Content Include="WebAdmin\media\fonts\FontAwesome.otf" />
+    <Content Include="WebAdmin\MPAdmin.Master" />
+    <Content Include="WebAdmin\MPBlank.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CCommonData.cs" />
+    <Compile Include="CCommonFunction.cs" />
+    <Compile Include="CSession.cs" />
+    <Compile Include="Danh_Muc\Drill_Down.aspx.cs">
+      <DependentUpon>Drill_Down.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Danh_Muc\Drill_Down.aspx.designer.cs">
+      <DependentUpon>Drill_Down.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Danh_Muc\Mau_Column.aspx.cs">
+      <DependentUpon>Mau_Column.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Danh_Muc\Mau_Column.aspx.designer.cs">
+      <DependentUpon>Mau_Column.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Danh_Muc\UserControl\uc2002_Drill_Down.ascx.cs">
+      <DependentUpon>uc2002_Drill_Down.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Danh_Muc\UserControl\uc2002_Drill_Down.ascx.designer.cs">
+      <DependentUpon>uc2002_Drill_Down.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Danh_Muc\UserControl\uc2003_Mau_Column.ascx.cs">
+      <DependentUpon>uc2003_Mau_Column.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Danh_Muc\UserControl\uc2003_Mau_Column.ascx.designer.cs">
+      <DependentUpon>uc2003_Mau_Column.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\UserControl\uc8000_Dashboard.ascx.cs">
+      <DependentUpon>uc8000_Dashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\UserControl\uc8000_Dashboard.ascx.designer.cs">
+      <DependentUpon>uc8000_Dashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sample_Page\Bao_Cao.aspx.cs">
+      <DependentUpon>Bao_Cao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample_Page\Bao_Cao.aspx.designer.cs">
+      <DependentUpon>Bao_Cao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample_Page\Blank_Page.aspx.cs">
+      <DependentUpon>Blank_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample_Page\Blank_Page.aspx.designer.cs">
+      <DependentUpon>Blank_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample_Page\Danh_Muc.aspx.cs">
+      <DependentUpon>Danh_Muc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample_Page\Danh_Muc.aspx.designer.cs">
+      <DependentUpon>Danh_Muc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample_Page\Edit_Form.aspx.cs">
+      <DependentUpon>Edit_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample_Page\Edit_Form.aspx.designer.cs">
+      <DependentUpon>Edit_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample_Page\Tim_Kiem.aspx.cs">
+      <DependentUpon>Tim_Kiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample_Page\Tim_Kiem.aspx.designer.cs">
+      <DependentUpon>Tim_Kiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample_Page\UserControl\uc1312_Danh_Muc.ascx.cs">
+      <DependentUpon>uc1312_Danh_Muc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample_Page\UserControl\uc1312_Danh_Muc.ascx.designer.cs">
+      <DependentUpon>uc1312_Danh_Muc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample_Page\UserControl\uc1313_Edit_Form.ascx.cs">
+      <DependentUpon>uc1313_Edit_Form.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample_Page\UserControl\uc1313_Edit_Form.ascx.designer.cs">
+      <DependentUpon>uc1313_Edit_Form.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample_Page\UserControl\uc1315_Tim_Kiem.ascx.cs">
+      <DependentUpon>uc1315_Tim_Kiem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample_Page\UserControl\uc1315_Tim_Kiem.ascx.designer.cs">
+      <DependentUpon>uc1315_Tim_Kiem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample_Page\UserControl\uc1316_Bao_Cao.ascx.cs">
+      <DependentUpon>uc1316_Bao_Cao.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample_Page\UserControl\uc1316_Bao_Cao.ascx.designer.cs">
+      <DependentUpon>uc1316_Bao_Cao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Danh_Muc_Chuc_Nang.aspx.cs">
+      <DependentUpon>Danh_Muc_Chuc_Nang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Danh_Muc_Chuc_Nang.aspx.designer.cs">
+      <DependentUpon>Danh_Muc_Chuc_Nang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Danh_Sach_Nhom_Quyen.aspx.cs">
+      <DependentUpon>Danh_Sach_Nhom_Quyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Danh_Sach_Nhom_Quyen.aspx.designer.cs">
+      <DependentUpon>Danh_Sach_Nhom_Quyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Danh_Sach_Thanh_Vien.aspx.cs">
+      <DependentUpon>Danh_Sach_Thanh_Vien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Danh_Sach_Thanh_Vien.aspx.designer.cs">
+      <DependentUpon>Danh_Sach_Thanh_Vien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Doi_Mat_Khau.aspx.cs">
+      <DependentUpon>Doi_Mat_Khau.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Doi_Mat_Khau.aspx.designer.cs">
+      <DependentUpon>Doi_Mat_Khau.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Phan_Quyen_Chuc_Nang.aspx.cs">
+      <DependentUpon>Phan_Quyen_Chuc_Nang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Phan_Quyen_Chuc_Nang.aspx.designer.cs">
+      <DependentUpon>Phan_Quyen_Chuc_Nang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Quan_Ly_Thanh_Vien_Thuoc_Nhom.aspx.cs">
+      <DependentUpon>Quan_Ly_Thanh_Vien_Thuoc_Nhom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Quan_Ly_Thanh_Vien_Thuoc_Nhom.aspx.designer.cs">
+      <DependentUpon>Quan_Ly_Thanh_Vien_Thuoc_Nhom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\SignOut.aspx.cs">
+      <DependentUpon>SignOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\SignOut.aspx.designer.cs">
+      <DependentUpon>SignOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Thong_Tin_Account.aspx.cs">
+      <DependentUpon>Thong_Tin_Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\Thong_Tin_Account.aspx.designer.cs">
+      <DependentUpon>Thong_Tin_Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1001_DM_Chuc_Nang.ascx.cs">
+      <DependentUpon>uc1001_DM_Chuc_Nang.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1001_DM_Chuc_Nang.ascx.designer.cs">
+      <DependentUpon>uc1001_DM_Chuc_Nang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1002_DM_Thanh_Vien.ascx.cs">
+      <DependentUpon>uc1002_DM_Thanh_Vien.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1002_DM_Thanh_Vien.ascx.designer.cs">
+      <DependentUpon>uc1002_DM_Thanh_Vien.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1003_DM_Nhom_Quyen.ascx.cs">
+      <DependentUpon>uc1003_DM_Nhom_Quyen.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1003_DM_Nhom_Quyen.ascx.designer.cs">
+      <DependentUpon>uc1003_DM_Nhom_Quyen.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1004_Phan_Quyen_Chuc_Nang.ascx.cs">
+      <DependentUpon>uc1004_Phan_Quyen_Chuc_Nang.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1004_Phan_Quyen_Chuc_Nang.ascx.designer.cs">
+      <DependentUpon>uc1004_Phan_Quyen_Chuc_Nang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1005_Phan_Nhom_Thanh_Vien.ascx.cs">
+      <DependentUpon>uc1005_Phan_Nhom_Thanh_Vien.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1005_Phan_Nhom_Thanh_Vien.ascx.designer.cs">
+      <DependentUpon>uc1005_Phan_Nhom_Thanh_Vien.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1008_Doi_Mat_Khau.ascx.cs">
+      <DependentUpon>uc1008_Doi_Mat_Khau.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1008_Doi_Mat_Khau.ascx.designer.cs">
+      <DependentUpon>uc1008_Doi_Mat_Khau.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1009_Thong_Tin_Account.ascx.cs">
+      <DependentUpon>uc1009_Thong_Tin_Account.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\uc1009_Thong_Tin_Account.ascx.designer.cs">
+      <DependentUpon>uc1009_Thong_Tin_Account.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\ucContent_Sample.ascx.cs">
+      <DependentUpon>ucContent_Sample.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\ucContent_Sample.ascx.designer.cs">
+      <DependentUpon>ucContent_Sample.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\ucFooter.ascx.cs">
+      <DependentUpon>ucFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\ucFooter.ascx.designer.cs">
+      <DependentUpon>ucFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\ucHeader.ascx.cs">
+      <DependentUpon>ucHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\ucHeader.ascx.designer.cs">
+      <DependentUpon>ucHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\ucLeftMenuBar.ascx.cs">
+      <DependentUpon>ucLeftMenuBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Admin\UserControl\ucLeftMenuBar.ascx.designer.cs">
+      <DependentUpon>ucLeftMenuBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\MPAdmin.Master.cs">
+      <DependentUpon>MPAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\MPAdmin.Master.designer.cs">
+      <DependentUpon>MPAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\MPBlank.Master.cs">
+      <DependentUpon>MPBlank.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\MPBlank.Master.designer.cs">
+      <DependentUpon>MPBlank.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TKS_Thuc_Tap_Controller\TKS_Thuc_Tap_Controller.csproj">
+      <Project>{19905f36-3bf5-4fd8-9bed-4e9e214e0d1e}</Project>
+      <Name>TKS_Thuc_Tap_Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TKS_Thuc_Tap_DataLayer\TKS_Thuc_Tap_DataLayer.csproj">
+      <Project>{61bf14ba-157d-4b55-ba96-6d84d3e9153a}</Project>
+      <Name>TKS_Thuc_Tap_DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TKS_Thuc_Tap_Entity\TKS_Thuc_Tap_Entity.csproj">
+      <Project>{ec2f3e72-a5a3-4323-b763-bd28e851207f}</Project>
+      <Name>TKS_Thuc_Tap_Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TKS_Thuc_Tap_Report\TKS_Thuc_Tap_Report.csproj">
+      <Project>{4480be30-c778-4c6a-aa32-ef551189bcf8}</Project>
+      <Name>TKS_Thuc_Tap_Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TKS_Thuc_Tap_Utility\TKS_Thuc_Tap_Utility.csproj">
+      <Project>{96505a20-0887-4345-8344-620d4015e7f8}</Project>
+      <Name>TKS_Thuc_Tap_Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FileManagement\Import_Excel\" />
+    <Folder Include="FileManagement\Template\" />
+    <Folder Include="FileManagement\Upload_File\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58796</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58796/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+D:\Study - Work\TKSolution\Thuc_Tap\Implement\TKS_Thuc_Tap\TKS_Thuc_Tap_Web\obj\Debug\TKS_Thuc_Tap_Web.csproj.AssemblyReference.cache
+D:\Study - Work\TKSolution\Thuc_Tap\Implement\TKS_Thuc_Tap\TKS_Thuc_Tap_Web\obj\Debug\TKS_Thuc_Tap_Web.dll.licenses
+D:\Study - Work\TKSolution\Thuc_Tap\Implement\TKS_Thuc_Tap\TKS_Thuc_Tap_Web\obj\Debug\TKS_Thuc_Tap_Web.csproj.CoreCompileInputs.cache
+D:\Implement\TKS_Thuc_Tap\TKS_Thuc_Tap_Web\obj\Debug\TKS_Thuc_Tap_Web.csproj.AssemblyReference.cache
+D:\Implement\TKS_Thuc_Tap\TKS_Thuc_Tap_Web\obj\Debug\TKS_Thuc_Tap_Web.dll.licenses
+D:\Implement\TKS_Thuc_Tap\TKS_Thuc_Tap_Web\obj\Debug\TKS_Thuc_Tap_Web.csproj.CoreCompileInputs.cache
+D:\THỰC TẬP\Implement\TKS_Thuc_Tap\TKS_Thuc_Tap_Web\obj\Debug\TKS_Thuc_Tap_Web.csproj.AssemblyReference.cache
+D:\THỰC TẬP\Implement\TKS_Thuc_Tap\TKS_Thuc_Tap_Web\obj\Debug\TKS_Thuc_Tap_Web.dll.licenses
+D:\THỰC TẬP\Implement\TKS_Thuc_Tap\TKS_Thuc_Tap_Web\obj\Debug\TKS_Thuc_Tap_Web.csproj.CoreCompileInputs.cache
